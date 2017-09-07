@@ -24,12 +24,12 @@ import java.util.List;
 import cn.jpush.android.api.JPushInterface;
 import zhanghegang.com.bawei.zhanghegang1507c20170830.R;
 import zhanghegang.com.bawei.zhanghegang1507c20170830.activity.DownActivity;
-import zhanghegang.com.bawei.zhanghegang1507c20170830.adapter.LeftAdapter;
+
 import zhanghegang.com.bawei.zhanghegang1507c20170830.adapter.RightAdapter;
 import zhanghegang.com.bawei.zhanghegang1507c20170830.app.TotalApp;
 import zhanghegang.com.bawei.zhanghegang1507c20170830.bean.LeftData;
 import zhanghegang.com.bawei.zhanghegang1507c20170830.utils.NetWorkInfoUtils;
-import zhanghegang.com.bawei.zhanghegang1507c20170830.utils.SharePrefenceUtils;
+
 
 /**
  * Created by asus on 2017/8/30.
@@ -168,4 +168,6 @@ loadType.edit().putString("net","hasnet").commit();
             }
         });
     }
+
+
 }

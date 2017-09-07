@@ -125,6 +125,7 @@ public class TopFragment extends Fragment implements XListView.IXListViewListene
 
                 intent.putExtra("url",url);
                 getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.right_in,R.anim.left_out);
             }
         });
         lv_news.stopLoadMore();
