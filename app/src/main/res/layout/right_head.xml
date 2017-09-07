@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="35dp"
+
+    >
+<ImageView
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:id="@+id/iv_right_back"
+    android:src="@drawable/back"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/tv_right_set"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:text="设置"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

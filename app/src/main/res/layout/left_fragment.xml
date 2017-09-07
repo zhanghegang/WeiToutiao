@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/ll_head"
+    android:gravity="center_vertical"
+    android:background="#6F6F72"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/icon_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+android:id="@+id/ll_phone"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:id="@+id/iv_phone"
+                android:background="@drawable/bg_icon"
+                android:padding="6dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/phone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qq"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:id="@+id/iv_qq"
+                android:background="@drawable/bg_icon"
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/qq"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_weibo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:id="@+id/iv_weibo"
+                android:background="@drawable/bg_icon"
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/weibo"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:padding="3dp"
+android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/bg_go"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/icon_three"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="15dp"
+        android:id="@+id/btn_more"
+        android:textColor="#ccc"
+
+
+        android:text="更多登录方式  >"
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_shoucang"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/iv_shoucang"
+    android:src="@drawable/like"
+    android:scaleType="centerCrop"
+    />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_lihi"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_lishi"
+                android:src="@drawable/lishi"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_yejian"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_yejian"
+                android:src="@drawable/wanshang"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_yanjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜间"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ListView
+        android:divider="#ccc"
+        android:dividerHeight="1sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:id="@+id/left_lv"
+        android:paddingVertical="10dp"
+        ></ListView>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+android:background="@color/commont_bg"
+    tools:context="zhanghegang.com.bawei.zhanghegang1507c20170830.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:background="@color/main_head"
+    >
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_user"
+
+        android:src="@drawable/icon"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_total_title"
+        android:text="今日头条"
+        />
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_more"
+        android:src="@drawable/more"
+        />
+</LinearLayout>
+   <zhanghegang.com.bawei.zhanghegang1507c20170830.view.HorizontalView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/horizontal_scolled"
+       ></zhanghegang.com.bawei.zhanghegang1507c20170830.view.HorizontalView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_news"
+        android:paddingVertical="20dp"
+        ></ListView>
+</LinearLayout>

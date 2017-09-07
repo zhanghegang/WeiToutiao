@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <HorizontalScrollView
+            android:scrollbars="none"
+android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hlv_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/main_head_bg"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/ll_content"
+                >
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:background="@color/bg_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+           android:text="+"
+            android:id="@+id/tv_channel"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_type"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

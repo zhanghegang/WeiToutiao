@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="zhanghegang.com.bawei.zhanghegang1507c20170830.activity.MoreRegActivity">
+<TextView
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_more"
+    android:text="登录你的头条，精彩永不丢失"
+    android:textSize="20dp"
+    android:textColor="#111"
+    android:textStyle="italic"
+    />
+    <LinearLayout
+        android:background="@drawable/bg_more_ll"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+android:padding="7dp"
+            android:background="@drawable/bg_more_nei"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="请输入手机号"
+                android:id="@+id/et_phone"
+                android:background="#fff"
+                android:textColorHint="#ccc"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="2dp"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    ></LinearLayout>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/phone_msg"
+                android:text="发送验证码"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_more_ll"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="7dp"
+        android:background="@drawable/bg_more_nei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="#fff"
+            android:hint="请输入验证码"
+            android:textColorHint="#ccc"
+            android:id="@+id/et_yanzheng"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_more_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入头条"
+            android:background="@drawable/bg_more_btn"
+            android:textColor="#fff"
+            android:textSize="17dp"
+
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_more_tip"
+            android:gravity="center_horizontal"
+            android:text="xinxin"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/cb_more"
+            android:gravity="center"
+            android:text="我已阅读并同意“用户协议和隐私条款”"
+            />
+        <TextView
+            android:textColor="#0066cc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="账号密码登录"
+            android:id="@+id/more_reg"
+            />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:gravity="center"
+     android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <LinearLayout
+
+            android:background="#ccc"
+            android:layout_width="50dp"
+
+            android:layout_height="1dp"
+           ></LinearLayout>
+        <TextView
+            android:id="@+id/more"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="更多登录方法"
+            />
+        <LinearLayout
+android:background="#ccc"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+           ></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_more_icon"
+                android:gravity="center"
+                android:padding="1dp"
+                android:layout_height="wrap_content"
+
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/weixin1"
+                    android:id="@+id/more_weixin"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_more_qq"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:background="@drawable/bg_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/qq"
+                android:id="@+id/more_qq"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_more_weibo"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:background="@drawable/bg_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/weibo"
+                android:id="@+id/more_weibo"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_more_tianyi"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:background="@drawable/bg_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tianyi"
+                android:id="@+id/more_tianyi"
+                />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:background="@drawable/bg_email"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/youxiang"
+                android:id="@+id/more_email"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

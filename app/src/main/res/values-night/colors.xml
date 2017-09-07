@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="commont_bg">#000</color>
+    <color name="main_head">#ff0000</color>
+    <color name="main_head_text">#fff</color>
+    <color name="main_head_bg">#ccc</color>
+    <color name="main_item">#fff</color>
+</resources>
