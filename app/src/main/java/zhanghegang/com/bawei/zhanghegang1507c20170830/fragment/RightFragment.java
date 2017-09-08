@@ -41,6 +41,7 @@ public class RightFragment extends Fragment {
     private ImageView iv;
     private String[] left_data;
     private SharedPreferences loadType;
+    private Back back;
 
     @Nullable
     @Override
@@ -55,9 +56,16 @@ if(view==null)
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
 initView();
         initData();
     }
+public void setBack(Back back){
+    this.back=back;
+}
+   public interface Back{
+       void back(boolean slidingBack);
+   }
     private void initData() {
         left_data = new String[]{"清除缓存","字体大小","列表显示摘要","非wifi网络流量","非wifit网络播放提醒","推送通知","离线下载","检查版本"};
         int[] imgs={0,0,R.drawable.msg_back,0,0,R.drawable.msg_go,0,0};

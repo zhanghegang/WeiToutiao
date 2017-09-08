@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
@@ -96,7 +97,7 @@ adapter.setOnItemClik(new DownAdapter.OnItemListener() {
             public void onClick(View view) {
                 if(downs!=null&&downs.size()>0) {
 
-
+                    Toast.makeText(DownActivity.this, "开始下载...", Toast.LENGTH_SHORT).show();
                     for (int i = 0; i < downs.size(); i++) {
                         Log.d("DownActivity", "downs.get(i).status:" + downs.get(i).status);
 if(downs.get(i).status)

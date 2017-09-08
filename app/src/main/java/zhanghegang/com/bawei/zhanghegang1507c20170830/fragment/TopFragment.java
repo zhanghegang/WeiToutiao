@@ -42,6 +42,7 @@ public class TopFragment extends Fragment implements XListView.IXListViewListene
     private SlidingMenu menu;
     private View view;
     private MyAdapter adapter;
+    private Bundle bundle;
 
 
     @Nullable
@@ -59,15 +60,18 @@ public class TopFragment extends Fragment implements XListView.IXListViewListene
         lv_news.setPullRefreshEnable(true);
         lv_news.setPullLoadEnable(true);
         lv_news.setXListViewListener(this);
+        bundle=null;
         loadNews();
 
     }
 
     private void loadNews() {
         //获得activity传过来的参数
-        Bundle bundle = getArguments();
+
+        bundle = getArguments();
         String type = bundle.getString("type");
 
+        System.out.println("--------------------2222----"+type);
         RequestParams params=new RequestParams(HttpUrl.POST_URL);
         params.addBodyParameter("key",HttpUrl.KEY);
         params.addBodyParameter("type",type);
